@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce Web App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header+nav section -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                <!-- adding X button when screen is < 799px -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <!-- adding hamburgur to add in media query -->
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>$80.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>S</option>
+                <option>L</option>
+                <option>M</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Vero doloribus minus quae possimus ea cumque maxime beatae? Est libero consequatur eaque nostrum modi. 
+                Est dolore sequi consequuntur architecto in vero rerum cupiditate ex atque aut, 
+                autem accusamus nisi rem eum earum ullam debitis quas nemo. Facere quasi delectus quae consequuntur, 
+                debitis alias iste libero et illo totam deleniti provident cumque!
+            </span>
+        </div>
+    </section>
+
+    
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>SignUp for Newsletters</h4>
+            <p>Get Email updates about our latets shop and <span>special offers</span></p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your EmailID">
+            <button class="normal">SignUp</button>
+        </div>
+
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contacts</h4>
+            <p><strong>Address: </strong>Rose villa,lilly nagar,Ambernath east.401501</p>
+            <p><strong>Phone: </strong>+91 884530065 / +91 0010010012</p>
+            <P><strong>Working Hours: </strong>10:00 A.M to 22:00 P.M, Monday Closed</P>
+        </div>
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Accout</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+                
+    </footer>
+
+    <div class="copyright section-p1">
+        <p>&#169; 2024. Cara website using HTML CSS Javascript</p>
+    </div>
+
+    <script>
+        let MainImg=document.getElementById('MainImg');
+        let smallImg=document.getElementsByClassName('small-img');
+
+        smallImg[0].onclick=function(){
+            MainImg.src=smallImg[0].src;
+        }
+        smallImg[1].onclick=function(){
+            MainImg.src=smallImg[1].src;
+        }
+        smallImg[2].onclick=function(){
+            MainImg.src=smallImg[2].src;
+        }
+        smallImg[3].onclick=function(){
+            MainImg.src=smallImg[3].src;
+        }
+    </script>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

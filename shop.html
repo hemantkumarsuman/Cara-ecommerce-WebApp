@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce Web App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header+nav section -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                <!-- adding X button when screen is < 799px -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <!-- adding hamburgur to add in media query -->
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- Page Banner -->
+    <section id="page-header">
+        <h2>#Stay Home</h2>
+        <p>Save more with coupons & up to 70% off! </p>
+    </section>    
+
+    <!-- List of Products to shop -->
+    <section id="product1" class="section-p1">
+        <!-- onclick to product page should move to sproduct.html -->
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Luffy T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Nami T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$86</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>Puma</span>
+                    <h5>Zoro T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f4.jpg" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Sanji T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$83</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f5.jpg" alt="">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>Chopper T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f6.jpg" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Ussop T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$60</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f7.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Jimbei T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$89</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f8.jpg" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Kaido T-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>         
+
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Blue Formal shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Black Checked Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$86</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Plane White Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$83</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Half Sleeve Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n5.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>enim Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$60</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n6.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Grey half pant</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$89</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n7.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Brown Denim Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>         
+            
+            <div class="pro">
+                <img src="img/products/n8.jpg" alt="">
+                <div class="des">
+                    <span>Raymond</span>
+                    <h5>Plane Black Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>                        
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Pagination -->
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>SignUp for Newsletters</h4>
+            <p>Get Email updates about our latets shop and <span>special offers</span></p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your EmailID">
+            <button class="normal">SignUp</button>
+        </div>
+
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contacts</h4>
+            <p><strong>Address: </strong>Rose villa,lilly nagar,Ambernath east.401501</p>
+            <p><strong>Phone: </strong>+91 884530065 / +91 0010010012</p>
+            <P><strong>Working Hours: </strong>10:00 A.M to 22:00 P.M, Monday Closed</P>
+        </div>
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Accout</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+                
+    </footer>
+
+    <div class="copyright section-p1">
+        <p>&#169; 2024. Cara website using HTML CSS Javascript</p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
